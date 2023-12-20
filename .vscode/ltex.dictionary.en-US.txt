@@ -5,3 +5,6 @@ href
 desc
 dl
 dt
+link--vk
+link--yt
+link--tg
