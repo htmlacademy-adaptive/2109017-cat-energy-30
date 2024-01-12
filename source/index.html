@@ -5,6 +5,11 @@
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/32.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
 
@@ -143,8 +148,14 @@
         <dt class="example__item">Затраты на питание:</dt>
           <dd class="example__description">15 000 РУБ.</dd>
       </dl>
-      <img class="example__image-cat" src="#" width="560" height="512" alt="Картинка кота до.">
-      <img class="example__image-cat" src="#" width="560" height="512" alt="Картинка кота после.">
+      <picture>
+        <source type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-before@1x.jpg" width="560" height="512">
+        <img class="example__image-cat" src="images/cat-before@1x.jpg" srcset="images/cat-before@2x.jpg" width="280" height="256" alt="Картинка кота до.">
+      </picture>
+      <picture>
+        <source type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-after@1x.jpg" width="560" height="512">
+      <img class="example__image-cat" src="images/cat-after@1x.jpg" srcset="images/cat-after@2x.jpg" width="280" height="256" alt="Картинка кота после.">
+     </picture>
     </div>
   </section>
 
