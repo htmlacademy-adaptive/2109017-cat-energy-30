@@ -11,3 +11,5 @@ link--tg
 br
 fieldset
 maxlength
+
+srcset
