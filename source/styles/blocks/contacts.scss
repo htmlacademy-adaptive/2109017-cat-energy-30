@@ -1,0 +1,11 @@
+
+
+.contacts__title {
+  @include subtitle (16px, 20px);
+  text-transform: uppercase;
+  color: $secondary-color-text;
+}
+
+.contacts__text {
+  line-height: 20px;
+}

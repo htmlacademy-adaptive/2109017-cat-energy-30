@@ -1,0 +1,10 @@
+
+
+.hero__title {
+  @include subtitle (36px, 36px);
+}
+
+.hero__slogan {
+  @include subtitle (14px, 14px);
+  text-transform: uppercase;
+}

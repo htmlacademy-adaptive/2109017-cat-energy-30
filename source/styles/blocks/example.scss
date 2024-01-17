@@ -1,0 +1,14 @@
+
+
+.example__title {
+  @include subtitle (36px, 40px);
+}
+
+.example__item--name {
+  @include subtitle (24px, 24px);
+}
+
+.example__version {
+  @include subtitle (14px, 20px);
+  text-transform: uppercase;
+}

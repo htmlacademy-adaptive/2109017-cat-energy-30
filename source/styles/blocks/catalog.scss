@@ -1,0 +1,43 @@
+
+
+.catalog__subtitle {
+  @include subtitle (16px, 20px);
+  text-transform: uppercase;
+  color: $color-subtitle;
+}
+
+.catalog__description-title {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__description-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__subtitle--more {
+  color: $secondary-color-text;
+}
+
+.catalog__title {
+  @include subtitle (24px, 24px);
+}
+
+.catalog__subtitle--additional {
+  line-height: 16px;
+}
+
+.catalog__additional {
+  line-height: 14px;
+}
+
+.catalog__action {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.catalog__action-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+}
