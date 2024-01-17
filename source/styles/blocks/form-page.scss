@@ -1,14 +1,9 @@
-.form-page {
-
-
-}
 
 .form-page__title {
-
-
+  @include subtitle (36px, 36px);
 }
 
 .form-page__desc {
-
-
+  @include subtitle (14px, 18px);
+  text-transform: uppercase;
 }

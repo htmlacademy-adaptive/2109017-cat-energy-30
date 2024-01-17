@@ -1,34 +1,14 @@
-.example {
 
-
-}
-
-.example__wrapper {
-
-
-}
 
 .example__title {
-
-
+  @include subtitle (36px, 40px);
 }
 
-.example__text {
-
-
+.example__item--name {
+  @include subtitle (24px, 24px);
 }
 
-.example__list {
-
-
-}
-
-.example__item {
-
-
-}
-
-.example__description {
-
-  
+.example__version {
+  @include subtitle (14px, 20px);
+  text-transform: uppercase;
 }

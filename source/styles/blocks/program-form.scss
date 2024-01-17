@@ -1,40 +1,20 @@
 .program-form {
 
-
-}
-
-.program-form__wrapper {
-
-
-}
-
-.program-form__group {
-
-
-}
-
-.program-form__info-list {
-
-
-}
-
-
-.program-form__info-item {
-
-
+  //
 }
 
 .program-form__desc {
-
-
-}
-
-.program-form__subtitle {
-
-
+  @include subtitle (16px, 18px);
+  text-transform: uppercase;
+  color: $color-text;
 }
 
 .program-form__input {
+  @include subtitle (16px, 18px);
+  text-transform: uppercase;
+  color: $color-text;
+}
 
-  
+.program-form__title {
+  @include subtitle (24px, 26px);
 }

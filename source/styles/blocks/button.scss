@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $brand-color;
+  padding: 10px 20px;
+}

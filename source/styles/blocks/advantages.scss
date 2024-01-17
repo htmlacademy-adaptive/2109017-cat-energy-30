@@ -1,43 +1,14 @@
 .advantages {
 
-
-}
-
-.advantages__wrapper {
-
-
+  //
 }
 
 .advantages__title {
-
-
+  @include subtitle (36px, 40px);
 }
 
 .advantages__list {
-
-
-}
-.advantages__item {
-
-
-}
-
-.advantages__item--functionality {
-
-
-}
-
-.advantages__item--powder {
-
-
-}
-
-.advantages__item--substitute {
-
-
-}
-
-.advantages__item--changes {
-
-  
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
