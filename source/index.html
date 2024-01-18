@@ -16,8 +16,12 @@
   <body class="page__body">
     <header class="header">
       <a class="header__logo logo" href="index.html" aria-current="page">
-        <img class="logo__image logo__image--icon" src="#" width="70" height="59" alt="Логотип Cat Energy.">
-        <img class="logo__image logo__image--text" src="#" width="118" height="21" aria-hidden="true" alt="Cat Energy.">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59"/>
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50"/>
+          <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
+          <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" aria-hidden="true" alt="Cat Energy.">
       </a>
       <div class="main-nav">
         <button class="main-nav__toggle button-burger" type="button">
@@ -170,7 +174,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo logo" href="index.html" aria-current="page">
-          <img class="logo__image logo__image--text" src="#" width="118" height="21" alt="Cat Energy.">
+          <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
         </a>
 
         <section class="footer__social social">
