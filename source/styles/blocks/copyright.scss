@@ -1,4 +1,4 @@
-.copyright {
+.copyright__link {
   text-decoration: none;
 }
 
@@ -8,3 +8,35 @@
   color: $color-text;
 }
 
+.copyright__text:hover,
+.copyright__text:focus {
+  color: $color-text;
+}
+
+.copyright__text:active {
+  opacity: 0.3;
+}
+
+// .copyright__link-image {
+//   fill: red;
+// }
+
+// .copyright__link-image:hover path {
+//   fill: $brand-color;
+// }
+
+// .copyright__image {
+//   fill: #000000;
+// }
+
+// ..copyright__image:hover path {
+//   fill: #756157;
+// }
+
+// .copyright__link:focus path {
+//   fill: #756157;
+// }
+
+// .copyright__link:active path {
+//   fill: rgba(117, 97, 87, 0.3);
+// }
