@@ -12,3 +12,35 @@
   padding: 0;
   list-style-type: none;
 }
+
+.advantages__item::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  background-color: $brand-color;
+  height: 60px;
+  width: 60px;
+}
+
+.advantages__item--functionality::before {
+  background-image: url("../../images/icons/stack.svg#leaf");
+  background-size: 30px 32px;
+}
+
+.advantages__item--powder::before {
+  background-image: url("../../images/icons/stack.svg#powder");
+  background-size: 30px 32px;
+}
+
+.advantages__item--substitute::before {
+  background-image: url("../../images/icons/stack.svg#cutlery");
+  background-size: 30px 32px;
+}
+
+.advantages__item--changes::before {
+  background-image: url("../../images/icons/stack.svg#watch");
+  background-size: 30px 32px;
+}

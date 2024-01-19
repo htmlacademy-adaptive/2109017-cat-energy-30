@@ -7,3 +7,7 @@ body {
   line-height: 18px;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
