@@ -1,8 +1,17 @@
-.page {
-  //
+
+.page__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
-.page__body {
+@media (min-width: $tablet-width) {
+  .page__container {
+    width: 708px;
+  }
+}
 
-  //
+@media (min-width: $desktop-width) {
+  .page__container {
+    width: 1220px;
+  }
 }

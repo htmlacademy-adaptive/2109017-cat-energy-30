@@ -1,15 +1,33 @@
-.nutrition {
-  //
-}
 
 .nutrition__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .nutrition__item {
   background-color: $bg-accent-color;
+  min-height: 266px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item {
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__list {
+    flex-direction: row;
+  }
+
+  .nutrition__item {
+    min-height: 374px;
+    min-width: 570px;
+  }
 }
 
 .nutrition__item::before {

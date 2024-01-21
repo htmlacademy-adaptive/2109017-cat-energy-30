@@ -1,4 +1,15 @@
 
+@media (min-width: $tablet-width) {
+  .example__image {
+    background-color: $bg-accent-2-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    background-color: $bg-accent-2-color;
+  }
+}
 
 .example__title {
   @include subtitle (36px, 40px);

@@ -1,9 +1,22 @@
 
 .form-page__title {
   @include subtitle (36px, 36px);
+  padding: 27px 0 22px;
 }
 
 .form-page__desc {
   @include subtitle (14px, 18px);
   text-transform: uppercase;
+  padding: 15px 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__title {
+    @include subtitle (60px, 60px);
+  }
+
+  .form-page__desc {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
