@@ -1,4 +1,28 @@
-.header {
+
+.header__toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../images/icons/stack.svg#mobile-close");
+  background-repeat: no-repeat;
+  align-self: center;
   background-color: $basic-white;
-  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .header__toggle {
+    display: none;
+  }
 }
