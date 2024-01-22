@@ -1,7 +1,9 @@
 .logo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 33px 1fr;
   align-items: center;
-  justify-content: space-between;
+  gap: 56px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {

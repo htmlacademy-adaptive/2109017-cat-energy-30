@@ -16,7 +16,8 @@
 
   <body class="page__body">
     <header class="header page__container">
-      <div class="logo">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="logo">
         <a class="logo__link" href="index.html" aria-current="page">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
@@ -27,13 +28,12 @@
         <a class="logo__link" href="index.html" aria-current="page">
           <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" aria-hidden="true" alt="Cat Energy.">
         </a>
-        <button class="header__toggle button-burger" type="button">
+        </div>
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <div class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">
                 Главная
               </a>
@@ -43,14 +43,13 @@
                 Каталог продукции
               </a>
             </li>
-
            <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
            </li>
           </ul>
-        </div>
+      </nav>
     </header>
 
     <main class="main">
@@ -173,8 +172,11 @@
     <div class="page__container">
       <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" src="#" width="1440" height="400"   alt="Карта местоположения.">
     </div>
+      <!-- <img class="contacts__map" src="#" width="1440" height="400"   alt="Карта местоположения."> -->
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719798!2d30.32047247704457!3d59.9387191620939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705951810913!5m2!1sru!2sru"
+      allowfullscreen="" title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </iframe>
   </section>
     </main>
     <footer class="footer">
