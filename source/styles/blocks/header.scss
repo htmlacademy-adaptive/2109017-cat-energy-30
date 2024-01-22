@@ -1,19 +1,4 @@
 
-.header__toggle {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 18px;
-  height: 18px;
-  background-image: url("../../images/icons/stack.svg#mobile-close");
-  background-repeat: no-repeat;
-  align-self: center;
-  background-color: $basic-white;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-}
-
 @media (min-width: $tablet-width) {
   .header {
     display: flex;
