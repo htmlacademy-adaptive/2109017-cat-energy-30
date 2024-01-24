@@ -1,3 +1,17 @@
 .header {
   padding-top: 13px;
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 55px;
+    padding-bottom: 29px;
+  }
+}

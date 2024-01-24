@@ -1,13 +1,107 @@
+
 .hero {
-  padding-top: 27px;
+  background-image: url("../../images/hero-bg-mobile@1x.jpg"), linear-gradient(0deg, #ffffff 31%, #63a63b 31%, #63a63c 45%, #64a73d 75%);
+  background-color: #444348;
+  background-size: 320px auto, cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.hero__wrapper {
+  display: grid;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background: none;
+  }
+
+  .hero__wrapper {
+    position: relative;
+    padding-left: 90px;
+  }
 }
 
 .hero__title {
   @include subtitle (36px, 36px);
+  color: $basic-white;
   margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .hero__title {
+    @include subtitle (60px, 60px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    min-height: 551px;
+  }
+
+  .hero__title {
+    padding-top: 110px;
+  }
+}
+
 
 .hero__slogan {
   @include subtitle (14px, 14px);
   text-transform: uppercase;
+  color: $basic-white;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__slogan {
+    @include subtitle (20px, 20px);
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    .hero__slogan {
+      padding-bottom: 52px;
+    }
+  }
+
+  .hero__image {
+    display: block;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+  }
+
+  .hero__link {
+    @include subtitle (20px, 26px);
+    color: $basic-white;
+    text-align: center;
+    position: absolute;
+    min-width: 224px;
+    min-height: 54px;
+    top: 270px;
+    left: 90px;
+    padding-top: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__link {
+    position: static;
+    justify-self: start;
+    min-width: 244px;
+  }
+
+  .hero__image {
+    width: 522px;
+    height: 499px;
+    position: absolute;
+    left: 470px;
+    top: 0;
+  }
 }

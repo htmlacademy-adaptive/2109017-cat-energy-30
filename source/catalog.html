@@ -16,25 +16,21 @@
 
   <body class="page__body">
     <header class="header page__container">
-      <div class="logo">
-        <a class="logo__link" href="index.html">
+      <nav class="main-nav burger-button--closed main-nav--nojs">
+        <a class=" logo logo__link" href="index.html" aria-current="page">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
             <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
           </picture>
-        </a>
-        <a class="logo__link" href="index.html" aria-current="page">
           <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" aria-hidden="true" alt="Cat Energy.">
         </a>
-        <button class="header__toggle button-burger" type="button">
+        <button class="main-nav__toggle burger-button burger-button--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <div class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="index.html">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">
                 Главная
               </a>
             </li>
@@ -43,15 +39,15 @@
                 Каталог продукции
               </a>
             </li>
-
            <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
            </li>
           </ul>
-        </div>
+      </nav>
     </header>
+
 
     <main class="inner">
         <div class="page__container">

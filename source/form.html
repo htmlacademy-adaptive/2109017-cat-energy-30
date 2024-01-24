@@ -16,41 +16,36 @@
 
   <body class="page__body">
     <header class="header page__container">
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-              <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-            </picture>
-          </a>
-          <a class="logo__link" href="index.html" aria-current="page">
-            <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" aria-hidden="true" alt="Cat Energy.">
-          </a>
-          <button class="header__toggle button-burger" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <div class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">
-                  Каталог продукции
-                </a>
-              </li>
-
-             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                Подбор программы
+      <nav class="main-nav burger-button--closed main-nav--nojs">
+        <a class=" logo logo__link" href="index.html" aria-current="page">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+            <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" aria-hidden="true" alt="Cat Energy.">
+        </a>
+        <button class="main-nav__toggle burger-button burger-button--closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">
+                Главная
               </a>
-             </li>
-            </ul>
-          </div>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+           <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Подбор программы
+            </a>
+           </li>
+          </ul>
+      </nav>
     </header>
 
     <main class="form-page">

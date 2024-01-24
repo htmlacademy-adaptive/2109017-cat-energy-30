@@ -14,6 +14,10 @@
 .nutrition__item {
   background-color: $bg-accent-color;
   min-height: 266px;
+  padding: 21px 20px 18px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,20 +61,25 @@
 .nutrition__subtitle {
   @include subtitle (24px, 37px);
   text-transform: uppercase;
+  margin: 0;
+  align-self: center;
 }
 
 
 .nutrition__description {
   color: $color-text;
+  grid-column: 1/-1;
+  margin: 0;
 }
 
 .nutrition__link {
   @include subtitle (16px, 16px);
-  text-align: center;
   text-transform: uppercase;
   color: $basic-black;
   text-decoration: none;
   position: relative;
+  grid-column: 1/-1;
+  align-self: self-end;
 }
 
 .nutrition__link::after {
@@ -81,8 +90,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 32px;
-  width: 10px;
+  width: 24px;
+  height: 12px;
   margin: 0 auto;
-  transform: translate(100px, -85%);
+  transform: translate(102px, -115%);
 }

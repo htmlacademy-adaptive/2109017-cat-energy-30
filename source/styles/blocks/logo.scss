@@ -6,8 +6,23 @@
   padding-bottom: 15px;
 }
 
+.logo__image {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .logo {
+    grid-template-columns: 60px 1fr;
     width: 174px;
+    padding: 0;
+    gap: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    grid-template-columns: 70px 1fr;
+    width: 202px;
+    gap: 14px;
   }
 }
