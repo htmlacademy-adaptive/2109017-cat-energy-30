@@ -6,10 +6,6 @@
   padding-bottom: 15px;
 }
 
-.logo__image {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
   .logo {
     grid-template-columns: 60px 1fr;

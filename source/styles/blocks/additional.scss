@@ -1,0 +1,40 @@
+
+@media (min-width: $desktop-width) {
+  .additional__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 80px;
+  }
+}
+
+.additional__title {
+  @include subtitle (24px, 24px);
+}
+
+.additional__subtitle {
+  line-height: 16px;
+}
+
+
+.additional__action {
+  // background-image: url("../../images/cat-carrying@1x.jpg");
+  background-color: rgba(104, 183, 56, 0.85);
+  opacity: 0.85;
+}
+
+.additional__action-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+}
+
+.additional__action-text::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../images/icons/stack.svg#gift");
+}
