@@ -61,6 +61,7 @@
   display: flex;
   align-items: center;
   gap: 13px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -147,7 +148,6 @@
   @include subtitle (16px, 18px);
   text-transform: uppercase;
   color: $color-text;
-  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -176,6 +176,7 @@
   border: 1px solid $input-color;
   padding: 14px 15px 13px;
   max-height: 45px;
+  order: 1;
 
   &:hover {
     border-color: $border-accent-color;
@@ -340,14 +341,15 @@
   }
 }
 
+
 .form__info {
   --color: #000000;
-  position: relative;
+  flex-basis: contents;
 }
 
 .form__info::after {
   content: "";
-  // position: absolute;
+  position: absolute;
   display: block;
   width: 20px;
   height: 20px;
@@ -357,14 +359,24 @@
   mask-position: center;
   top: 50%;
   transform: translateY(-50%);
+  right: 12px;
 }
 
 .form__info:hover {
+  --color: #222222;
+}
+
+
+.form__info:focus {
   --color: #68b738;
 }
 
 .form__info:active {
-  --color: rgb(104, 183, 56, 0.3);
+  --color: #68b738;
+}
+
+.form__info:invalid {
+  --color: #ff8282;
 }
 
 .form__info--email {
@@ -377,6 +389,11 @@
   --bgi: url("../../images/icons/stack.svg#phone");
 }
 
+@media (min-width: $tablet-width) {
+  .form__info::after {
+    right: 14px;
+  }
+}
 
 .form__title--additional {
   padding-bottom: 0;

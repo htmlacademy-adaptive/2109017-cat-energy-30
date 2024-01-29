@@ -113,24 +113,36 @@
   }
 }
 
-
-.catalog__subtitle {
+.catalog__subtitle-link {
   @include subtitle (16px, 20px);
   text-transform: uppercase;
-  color: $color-subtitle;
-  grid-column: 2/3;
+  text-decoration: none;
   margin: 0;
+  grid-column: 2/3;
   width: 76px;
 }
 
 @media (min-width: $tablet-width) {
-  .catalog__subtitle {
+  .catalog__subtitle-link {
     @include subtitle (20px, 24px);
     grid-column: 1/-1;
     grid-row: 2/3;
     width: 140px;
     justify-self: center;
     text-align: center;
+  }
+}
+
+.catalog__subtitle {
+  @include subtitle (16px, 20px);
+  text-transform: uppercase;
+  color: $color-subtitle;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__subtitle {
+    @include subtitle (20px, 24px);
   }
 }
 

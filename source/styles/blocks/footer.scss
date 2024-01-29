@@ -19,6 +19,19 @@
 }
 
 .footer__logo {
+  display: block;
+  text-align: center;
+}
+
+.footer__logo-link {
   display: grid;
   grid-template-columns: 1fr;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

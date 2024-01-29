@@ -1,6 +1,15 @@
 .social {
   padding-top: 20px;
   padding-bottom: 20px;
+  min-width: 280px;
+  border-top: 1px solid $border-secondary-color;
+  border-bottom: 1px solid $border-secondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
 }
 
 .social__list {
@@ -11,8 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  width: 132px;
+  gap: 6px;
 }
 
 .social__link {
@@ -22,8 +30,8 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 28px;
-  height: 22px;
+  width: 40px;
+  height: 40px;
 }
 
 .social__link::before {
@@ -35,9 +43,6 @@
   mask-image: var(--bgi);
   mask-repeat: no-repeat;
   mask-position: center;
-  // -webkit-mask-image: var(--bgi);
-  // -webkit-mask-repeat: no-repeat;
-  // -webkit-mask-position: center;
 }
 
 .social__link:hover {
