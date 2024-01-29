@@ -1,5 +1,6 @@
 .social {
-  width: 132px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .social__list {
@@ -11,6 +12,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  width: 132px;
 }
 
 .social__link {

@@ -1,6 +1,12 @@
+.contacts {
+  background-color: $bg-accent-color;
+}
+
+
 @media (min-width: $desktop-width) {
   .contacts {
     display: grid;
+    background-color: $bg-accent-color;
   }
 }
 

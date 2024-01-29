@@ -233,6 +233,10 @@
   }
 }
 
+.nutrition__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .nutrition__link {
     padding-top: 0;

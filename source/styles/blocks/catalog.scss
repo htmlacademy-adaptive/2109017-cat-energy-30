@@ -6,12 +6,20 @@
   display: grid;
   justify-items: center;
   gap: 25px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__list {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    padding-top: 30px;
+    padding-bottom: 76px;
   }
 }
 
@@ -32,6 +40,13 @@
     background-image: linear-gradient(to top, $bg-accent-2-color 430px, #ffffff 430px);
     padding: 10px 37px 40px;
     grid-template-rows: 222px min-content 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
@@ -58,7 +73,9 @@
   grid-template-rows: repeat(3, 1fr);
   width: 100%;
   padding-bottom: 25px;
+  min-height: 207px;
 }
+
 
 .catalog__item--more::after {
   position: absolute;
@@ -70,7 +87,7 @@
   background: $border-light-color;
   box-shadow: 100vw 0 0 $border-light-color;
   z-index: 1;
-  transform: translateY(184px);
+  transform: translateY(207px);
 }
 
 @media (min-width: $tablet-width) {
@@ -78,6 +95,24 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__item--more {
+    background: initial;
+    min-height: 429px;
+    align-self: self-end;
+    border: 2px solid $bg-accent-color;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item--more {
+    min-width: 245px;
+  }
+}
+
 
 .catalog__subtitle {
   @include subtitle (16px, 20px);
@@ -118,6 +153,19 @@
   background-image: url("../../images/icons/stack.svg#plus");
   width: 30px;
   height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__subtitle--more {
+    grid-row: 1/2;
+    width: 140px;
+    gap: 50px;
+  }
+
+  .catalog__subtitle--more::before {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .catalog__description {
@@ -210,6 +258,16 @@
   padding: 0;
   justify-self: center;
   padding-top: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__more-product {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    text-align: center;
+    padding-top: 23px;
+  }
 }
 
 .catalog__button-more {
