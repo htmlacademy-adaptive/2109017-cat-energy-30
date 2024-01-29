@@ -147,6 +147,7 @@
   @include subtitle (16px, 18px);
   text-transform: uppercase;
   color: $color-text;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -186,6 +187,10 @@
 
   &:invalid:not(:placeholder-shown) {
     border-color: $error-color;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
@@ -335,6 +340,44 @@
   }
 }
 
+.form__info {
+  --color: #000000;
+  position: relative;
+}
+
+.form__info::after {
+  content: "";
+  // position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color);
+  mask-image: var(--bgi);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__info:hover {
+  --color: #68b738;
+}
+
+.form__info:active {
+  --color: rgb(104, 183, 56, 0.3);
+}
+
+.form__info--email {
+  --bgi: url("../../images/icons/stack.svg#email");
+  width: 28px;
+  height: 22px;
+}
+
+.form__info--phone {
+  --bgi: url("../../images/icons/stack.svg#phone");
+}
+
+
 .form__title--additional {
   padding-bottom: 0;
 }
@@ -404,6 +447,10 @@
 
   &:invalid:not(:placeholder-shown) {
     border-color: $error-color;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
