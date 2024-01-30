@@ -148,6 +148,7 @@
   @include subtitle (16px, 18px);
   text-transform: uppercase;
   color: $color-text;
+  flex-basis: content;
 }
 
 @media (min-width: $tablet-width) {
@@ -344,7 +345,6 @@
 
 .form__info {
   --color: #000000;
-  flex-basis: contents;
 }
 
 .form__info::after {
@@ -474,6 +474,8 @@
 @media (min-width: $tablet-width) {
   .form__comment {
     margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
