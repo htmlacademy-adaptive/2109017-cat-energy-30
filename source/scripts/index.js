@@ -1,5 +1,3 @@
-/* в этот файл добавляет скрипты*/
-
 const navMain = document.querySelector('.main-nav');
 const mainNavToggle = document.querySelector('.main-nav__toggle');
 
