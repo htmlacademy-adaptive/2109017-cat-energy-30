@@ -2,21 +2,77 @@
 .form-page__title {
   @include subtitle (36px, 36px);
   padding: 27px 0 22px;
-}
-
-.form-page__desc {
-  @include subtitle (14px, 18px);
-  text-transform: uppercase;
-  padding: 15px 0 20px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: relative;
+  width: fit-content;
 }
 
 @media (min-width: $tablet-width) {
   .form-page__title {
     @include subtitle (60px, 60px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .form-page__title {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__title {
+    @include subtitle (60px, 60px);
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
+.form-page__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 1px;
+  width: 100vw;
+  background: $border-secondary-color;
+  box-shadow: 100vw 0 0 $border-secondary-color;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__title::before {
+    display: none;
+  }
+}
+
+.form-page__desc {
+  @include subtitle (14px, 18px);
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+
+@media (min-width: $tablet-width) {
   .form-page__desc {
     font-size: 20px;
     line-height: normal;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    padding-left: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-page__desc {
+    padding-top: 15px;
+    padding-left: 0;
+  }
+}
+

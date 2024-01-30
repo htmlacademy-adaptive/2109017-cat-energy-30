@@ -1,4 +1,33 @@
 
 .inner__title {
   @include subtitle (36px, 36px);
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  position: relative;
+  width: fit-content;
+}
+
+.inner__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 1px;
+  width: 100vw;
+  background: $border-secondary-color;
+  box-shadow: 100vw 0 0 $border-secondary-color;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .inner__title {
+    @include subtitle (60px, 60px);
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+
+  .inner__title::before {
+    display: none;
+  }
 }

@@ -1,3 +1,4 @@
+
 .copyright {
   display: flex;
   justify-content: space-between;
@@ -16,6 +17,7 @@
   text-decoration: none;
 }
 
+
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
@@ -31,26 +33,30 @@
   opacity: 0.3;
 }
 
-// .copyright__link-image {
-//   fill: red;
-// }
+.copyright__logo--image {
+  --color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  content: "";
+  background-color: var(--color);
+  width: 27px;
+  height: 34px;
+  mask: var(--bgi) no-repeat center/contain;
+}
 
-// .copyright__link-image:hover path {
-//   fill: $brand-color;
-// }
+.copyright__logo {
+  --bgi: url("../../images/icons/stack.svg#logo-html");
+}
 
-// .copyright__image {
-//   fill: #000000;
-// }
+.copyright__logo:hover {
+  --color: #68b738;
+}
 
-// ..copyright__image:hover path {
-//   fill: #756157;
-// }
+.copyright__logo:focus {
+  --color: #68b738;
+}
 
-// .copyright__link:focus path {
-//   fill: #756157;
-// }
-
-// .copyright__link:active path {
-//   fill: rgba(117, 97, 87, 0.3);
-// }
+.copyright__logo:active {
+  --color: rgba(104, 183, 56, 0.3);
+}

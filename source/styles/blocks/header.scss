@@ -1,28 +1,18 @@
-
-.header__toggle {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 18px;
-  height: 18px;
-  background-image: url("../../images/icons/stack.svg#mobile-close");
-  background-repeat: no-repeat;
-  align-self: center;
-  background-color: $basic-white;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
+.header {
+  padding-top: 13px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
+}
 
-  .header__toggle {
-    display: none;
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 55px;
+    padding-bottom: 24px;
   }
 }
