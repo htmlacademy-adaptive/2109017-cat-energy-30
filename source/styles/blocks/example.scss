@@ -1,11 +1,13 @@
 .example {
   background-color: $bg-accent-2-color;
+  padding-bottom: 33px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
     background-color: transparent;
-    background-image: linear-gradient(to top, $bg-accent-2-color 462px, #ffffff 462px);
+    background-image: linear-gradient(to top, $bg-accent-2-color 462px, $basic-white 462px);
+    padding-bottom: 95px;
   }
 
   .example__wrapper {
@@ -16,7 +18,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-top: 29px;
+    padding-bottom: 0;
   }
 }
 
@@ -25,7 +27,6 @@
     grid-template-columns: 436px 1fr;
   }
 }
-
 
 .example__title {
   @include subtitle (36px, 40px);
@@ -39,7 +40,7 @@
   .example__title {
     @include subtitle (60px, 60px);
     padding-top: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     position: relative;
     width: fit-content;
     grid-column: 1/-1;
@@ -73,7 +74,7 @@
 
 .example__text {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
 }
 
@@ -98,7 +99,7 @@
 .example__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
   gap: 8px 32px;
   text-align: center;
@@ -124,6 +125,7 @@
 
 .example__item {
   @include subtitle (24px, 24px);
+  text-transform: uppercase;
   position: relative;
 
   &--time {
@@ -141,7 +143,7 @@
   background-color: transparent;
   width: 124px;
   height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $border-accent-color;
   border-radius: 3px;
   top: -50%;
   right: 0;
@@ -172,7 +174,7 @@
 
 @media (min-width: $tablet-width) {
   .example__description {
-    width: max-content;
+    width: fit-content;
     background-color: $basic-white;
     font-size: 14px;
     line-height: 14px;
@@ -237,6 +239,7 @@
   .example__slider {
     grid-column: 2/3;
     grid-row: 1/5;
+    justify-self: self-end;
   }
 }
 
@@ -263,46 +266,36 @@
   }
 }
 
-.example__range-bar {
+.example__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+  width: 40px;
+  overflow-y: hidden;
   position: absolute;
-  height: 4px;
-  width: 256px;
-  background-color: $color-icon;
-  border-radius: 2px;
-  transform: rotate(90deg);
-  bottom: 50%;
-  left: 12px;
-}
-
-@media (min-width: $tablet-width) {
-  .example__range-bar {
-    width: 512px;
-    left: 24px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__range-bar {
-    bottom: 57%;
-  }
+  right: 120px;
 }
 
 .example__toggle {
-  position: absolute;
-  width: 40px;
-  height: 40px;
   padding: 0;
-  border-radius: 20px;
-  border: 2px solid #666666;
-  cursor: pointer;
-  bottom: -18px;
-  left: 108px;
-  background-image: url("../../images/icons/stack.svg#thumb");
-  transform: rotate(90deg);
+  border: none;
+  background: none;
+  color: $color-icon;
+
+  &:hover {
+    color: $brand-color;
+  }
+
+  &:active {
+    color: $brand-icon;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .example__toggle {
-    left: 236px;
+  .example__button {
+    height: 512px;
+    right: 260px;
+    overflow-y: visible;
   }
 }

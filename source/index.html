@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/32.png">
@@ -29,37 +31,31 @@
         </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">
-                Главная
-              </a>
+              <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукции
-              </a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
-              Подбор программы
-            </a>
-           </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
           </ul>
       </nav>
     </header>
 
-    <main class="main container">
+    <main class="container">
       <h1 class="visually-hidden">Cat Energy</h1>
 
   <section class="hero">
     <div class="page__container hero__wrapper">
         <h2 class="hero__title">
           Функциональное<br>
-          питание для котов
+          питание для&nbsp;котов
         </h2>
         <p class="hero__slogan">
           Занялся собой? Займись котом!
         </p>
-        <picture>
+        <picture class="hero__image-wrapper">
           <source type="image/webp" media="(min-width: 1200px)" srcset="images/hero-desktop@1x.webp 1x, images/hero-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-tablet@1x.webp 1x, images/hero-tablet@2x.webp 2x">
           <source type="image/webp" srcset="images/hero-mobile@1x.webp 1x, images/hero-mobile@2x.webp 2x">
@@ -83,7 +79,7 @@
           </h3>
           <p class="nutrition__description">
             Ваш кот весит больше собаки и почти утратил способность
-            лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+            лазить по&nbsp;деревьям? Пора на диету! Cat Energy Slim поможет
             вашему питомцу сбросить лишний вес.
           </p>
           <a class="nutrition__link" href="#">
@@ -95,12 +91,12 @@
           <h3 class="nutrition__subtitle">
             Набор массы
           </h3>
-          <p class="nutrition__description">
+          <p class="nutrition__description nutrition__description--pro">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!
           </p>
-          <a class="nutrition__link" href="#">
+          <a class="nutrition__link nutrition__link--pro" href="#">
             Каталог Pro
           </a>
         </li>
@@ -183,21 +179,21 @@
               <img class="example__image-cat" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Картинка кота после.">
             </picture>
           </div>
-             <div class="example__range-bar">
-               <button class="example__toggle example__toggle--left" type="button">
-                 <span class="visually-hidden">Худой кот</span>
-               </button>
-               <button class="example__toggle example__toggle--right" type="button">
-                <span class="visually-hidden">Толстый кот</span>
-             </button>
-            </div>
+          <div class="example__button">
+          <button class="example__toggle" type="button">
+            <span class="visually-hidden">Переключатель слайдера</span>
+            <svg class="example__img" width="40" height="512" role="img" aria-hidden="true">
+              <use href="./images/icons/stack.svg#slider-btn"></use>
+            </svg>
+          </button>
+        </div>
         </div>
       </div>
   </section>
 
   <section class="contacts">
     <div class="contacts__wrapper page__container">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
       <p class="contacts__text">
         <span class="contacts__text-address">ул. Большая Конюшенная, д. 19/8</span>
         <span class="contacts__text-address">Санкт-Петербург</span>
@@ -212,7 +208,7 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper page__container">
-        <a class="footer__logo logo" href="index.html" aria-current="page">
+        <a class="footer__logo-link logo" href="index.html" aria-current="page">
           <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
         </a>
 

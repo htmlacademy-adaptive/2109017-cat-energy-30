@@ -1,22 +1,22 @@
-
 .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 168px;
+    padding-top: 0;
+    padding-left: 3px;
   }
 }
-
 
 .copyright__link {
   text-decoration: none;
 }
-
 
 .copyright__text {
   font-size: 16px;
@@ -34,7 +34,7 @@
 }
 
 .copyright__logo--image {
-  --color: #444444;
+  --color: #{$color-text};
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -50,13 +50,13 @@
 }
 
 .copyright__logo:hover {
-  --color: #68b738;
+  --color: #{$brand-color};
 }
 
 .copyright__logo:focus {
-  --color: #68b738;
+  --color: #{$brand-color};
 }
 
 .copyright__logo:active {
-  --color: rgba(104, 183, 56, 0.3);
+  opacity: 0.3;
 }

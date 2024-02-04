@@ -1,4 +1,3 @@
-
 .inner__title {
   @include subtitle (36px, 36px);
   margin: 0;
@@ -23,11 +22,17 @@
 @media (min-width: $tablet-width) {
   .inner__title {
     @include subtitle (60px, 60px);
-    padding-top: 50px;
-    padding-bottom: 54px;
+    padding-top: 40px;
+    padding-bottom: 64px;
   }
 
   .inner__title::before {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner__title {
+    padding-top: 57px;
   }
 }
