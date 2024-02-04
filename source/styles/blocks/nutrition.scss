@@ -2,6 +2,18 @@
   padding: 20px 0;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition {
+    padding-top: 94px;
+  }
+}
+
 .nutrition__list {
   margin: 0;
   padding: 0;
@@ -9,6 +21,13 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__list {
+    gap: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -23,19 +42,19 @@
   min-height: 266px;
   display: grid;
   grid-template-columns: min-content 1fr;
-  padding: 24px 33px 18px 13px;
+  padding: 21px 33px 18px 20px;
 
   &--pro {
-    padding-top: 21px;
-    padding-left: 20px;
+    padding-top: 24px;
+    padding-left: 13px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__item {
-    grid-template-columns: 1fr min-content;
-    min-height: 372px;
-    padding: 77px 52px 53px 63px;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    padding: 77px 63px 53px 52px;
   }
 }
 
@@ -43,13 +62,15 @@
   .nutrition__item {
     min-width: 570px;
     grid-template-columns: min-content 1fr;
-    padding: 41px 61px 55px 52px;
+    padding: 45px 61px 62px 52px;
+    row-gap: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__item--pro {
     padding-right: 29px;
+    padding-bottom: 58px;
   }
 }
 
@@ -65,14 +86,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__item::before {
     grid-column: 2/-1;
-    grid-row: 1/3;
-    align-self: self-end;
+    grid-row: 1/4;
+    justify-self: end;
   }
 }
 
@@ -115,6 +135,7 @@
     background-image: url("../../images/icons/stack.svg#cat-pro-tablet");
     width: 268px;
     height: 200px;
+    align-self: center;
   }
 }
 
@@ -153,13 +174,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .nutrition__item--pro .nutrition__subtitle {
+    padding-left: 0;
+    padding-top: 3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .nutrition__subtitle {
     font-size: 36px;
     align-self: self-start;
-    padding-left: 0;
-  }
-
-  .nutrition__item--pro .nutrition__subtitle {
     padding-left: 0;
   }
 }
@@ -180,7 +204,7 @@
   margin: 0;
   border-bottom: 1px solid $border-secondary-color;
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -191,7 +215,8 @@
     grid-column: 1/2;
     max-width: 340px;
     border-bottom: none;
-    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 52px;
   }
 }
 
@@ -199,8 +224,25 @@
   .nutrition__description {
     grid-column: 1/-1;
     max-width: 457px;
-    padding-top: 39px;
-    padding-bottom: 2px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.nutrition__description--pro {
+  padding-left: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__description--pro {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__description--pro {
+    padding-left: 17px;
+    max-width: 460px;
   }
 }
 
@@ -213,6 +255,7 @@
   grid-column: 1/-1;
   align-self: self-end;
   padding-top: 15px;
+  margin: 0;
 
   &::after {
     content: "";
@@ -222,9 +265,9 @@
     background-position: center;
     background-size: auto;
     width: 32px;
-    height: 10px;
+    height: 12px;
     top: 50%;
-    transform: translate(8px, 3px);
+    transform: translateX(15px);
     background-position-x: -8px;
   }
 
@@ -243,9 +286,10 @@
     align-self: self-start;
     font-size: 20px;
     line-height: normal;
+    grid-column: 1/2;
 
     &::after {
-      transform: translate(8px, -50%);
+      transform: translate(25px, -50%);
       background-position-x: -8px;
     }
 
@@ -258,5 +302,27 @@
 @media (min-width: $desktop-width) {
   .nutrition__link {
     align-self: self-end;
+    grid-column: 1/-1;
+    padding-top: 5px;
+
+    &::after {
+      transform: translate(25px, -20%);
+    }
+  }
+}
+
+.nutrition__link--pro {
+  padding-left: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__link--pro {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__link--pro {
+    padding-left: 20px;
   }
 }

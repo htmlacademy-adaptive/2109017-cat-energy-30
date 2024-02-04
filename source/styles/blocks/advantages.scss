@@ -15,6 +15,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    padding-top: 51px;
+  }
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -23,21 +29,24 @@
   flex-direction: column;
   gap: 20px;
   padding-top: 40px;
-  padding-bottom: 47px;
+  padding-bottom: 49px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 136px;
+    gap: 37px 137px;
+    padding-top: 0;
+    padding-bottom: 47px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 77px;
+    padding-bottom: 69px;
   }
 }
 
@@ -50,7 +59,52 @@
 
 @media (min-width: $tablet-width) {
   .advantages__item {
-    max-width: 249px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    grid-template-rows: 120px 1fr;
+    row-gap: 30px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--functionality {
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--functionality {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--powder {
+    padding-right: 79px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--powder {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--changes {
+    padding-right: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--changes {
+    padding-right: 0;
   }
 }
 
@@ -66,12 +120,21 @@
   height: 60px;
   grid-column: 1/2;
   grid-row: 1/2;
+  align-self: self-start;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item::after {
     width: 80px;
     height: 80px;
+    align-self: self-end;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item::after {
+    margin-bottom: 0;
   }
 }
 
@@ -99,7 +162,7 @@
   .advantages__item::before {
     counter-increment: advantages__list;
     content: counter(advantages__list);
-    color: #f2f2f2;
+    color: $bg-accent-color;
     text-align: center;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
@@ -118,4 +181,3 @@
     align-self: self-start;
   }
 }
-

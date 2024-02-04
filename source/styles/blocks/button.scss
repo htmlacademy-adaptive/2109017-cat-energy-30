@@ -15,15 +15,15 @@
   padding: 10px 20px;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $brand-icon;
   }
 
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $brand-icon;
   }
 
   &:active {
-    background-color: #5eaa2f;
+    background-color: $brand-icon;
     color: rgba(255, 255, 255, 0.3);
   }
 }

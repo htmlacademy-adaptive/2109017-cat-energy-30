@@ -32,7 +32,7 @@
     right: 0;
     bottom: 0;
     z-index: -2;
-    background-color: #62a53b;
+    background-color: $brand-gradient-2;
     background-image: url("../../images/hero-bg-desktop@1x.jpg");
     background-repeat: no-repeat;
     height: 694px;
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page__body--hero .main-nav__item--active {
+  .page__body--hero .main-nav__link--current {
     border-bottom: 2px solid $basic-white;
   }
 }
